@@ -8,11 +8,11 @@ SPDX-License-Identifier: MIT
 
 # Troposphere
 
-![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 
 Troposphere is an end-to-end encrypted, peer-to-peer, censorship-resistant cloud storage network.
 
-- [Whitepaper](#Whitepaper.pdf)
+- [Whitepaper](Whitepaper.pdf)
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ Troposphere is an end-to-end encrypted, peer-to-peer, censorship-resistant cloud
 
 ## Maintainers
 
-@mjg-foundation
+[@mjg-foundation](https://github.com/mjg-foundation)
 
 ##License
 
