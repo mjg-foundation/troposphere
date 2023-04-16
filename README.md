@@ -29,6 +29,6 @@ Troposphere is an end-to-end encrypted, peer-to-peer, censorship-resistant cloud
 
 [@mjg-foundation](https://github.com/mjg-foundation)
 
-##License
+## License
 
 [GPLv3](LICENSE) @ Matt Gleason
