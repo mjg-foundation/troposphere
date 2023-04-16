@@ -57,7 +57,7 @@ Storage Providers act as sellers in the exchange. They enforce access control to
 
 \subsection{Exchange}
 
-The exchange will allow Uploaders and Storage Providers to exchange storage capacity. Each order consists of a price in msats per Kilobyte per hour, and a fault tolerance period in hours. This fault tolerance period is the time used to determine if an Uploader or Storage Provider has dropped their end of the deal.
+The exchange will allow Uploaders and Storage Providers to exchange storage capacity. Each order consists of a price in msats per Kilobyte per hour, a fragment size, and a fault tolerance period in hours. This fault tolerance period is the time used to determine if an Uploader or Storage Provider has dropped their end of the deal.
 
 \subsection{Fault Tolerance}
 If a Storage Provider fails proof of storage challenges for longer than the fault tolerance period, the Uploader can stop paying for storage, and close their lightning channel. Similarly, if an Uploader stops paying for successful proof of storage challenges, or stops conducting proof of storage challenges altogether, for longer than the fault tolerance period, the Storage Provider can drop the fragment, and close their lightning channel. If the Uploader fails to uphold their end of the deal for a time shorter than the fault tolerance period, then resumes, they would owe the Storage Provider backpayment for the downtime, before the end of another fault tolerance period starting when the Uploader resumed communications.
