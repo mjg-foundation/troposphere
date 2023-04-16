@@ -1,0 +1,20 @@
+#!/bin/bash
+# SPDX-FileCopyrightText: 2023 Matt Gleason <mjgleason@foundationdevices.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# SPDX-FileCopyrightText: 2021 Foundation Devices, Inc. <hello@foundationdevices.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Check lints
+echo Running lints...
+reuse lint
+if [ $? -eq 0 ]
+then
+  echo -e "Lint succeeded."
+  exit 0
+else
+  echo -e "\n=======================================================" >&2
+  echo -e "Lint failed.  Fix the issues shown above and try again." >&2
+  echo -e "=======================================================\n" >&2
+  exit 1
+fi

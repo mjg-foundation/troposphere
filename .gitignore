@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: @ 2023 Matt Gleason <mjgleason@foundationdevices.com>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+*.aux
+*.log
+*.out
