@@ -46,7 +46,7 @@ Both Uploaders and Storage Providers use the same node software. The node consis
 Uploaders convert files into fragments, add give them addresses. Uploaders act as buyers in the exchange. They are encouraged to create 2 or more orders for storage per fragment, so that their file is stored redundantly. After each order is filled, the Uploader can send the fragment to the Storage Provider, and start requesting proofs of storage from the Storage Provider that filled the order, using sha256 hashes of the fragment, with random salts for each hour. After every successful proof of storage, the Uploader pays the Storage Provider the hourly rate for storage over a shared Lightning Network channel.
 
 \[
-    proof = \operatorname{SHA256}(salt || fragment)
+    proof = \operatorname{SHA256}(fragment || salt)
 \]
 
 The Uploader would keep a rolling table of salts and correct proof values for each Storage Provider it is cooperating with, in order to continuously verify data availability, while storing minimal data locally.
